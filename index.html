@@ -5,22 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV - Huynh Bao Nguyen</title>
   <style>
-    html, body {
+    body, html {
       margin: 0;
       padding: 0;
       height: 100%;
       background-color: #f0f0f0;
     }
+    .pdf-viewer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100dvh; 
+    }
     iframe {
       width: 100%;
-      height: 100vh;
+      height: 100dvh;
       border: none;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
     }
   </style>
 </head>
 <body>
-  <iframe 
-    src="https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/HnguynDevGoon/HnguynDev_CV/main/HnguynDev_CV.pdf">
-  </iframe>
+  <div class="pdf-viewer">
+    <iframe src="HnguynDev_CV.pdf"></iframe>
+  </div>
 </body>
 </html>
